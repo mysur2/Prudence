@@ -1,0 +1,249 @@
+{{ block title }}
+    Lottory
+{{ endblock }}
+
+{{ block content }}
+<p>
+       Participants are required to play the 4 tables labelled, (table1a – table 2a) and (table 1b – table 2b).
+     Each table has 6 decisions and combined make 24 decisions. Each table has an Option A (Lottery value package)
+     and an Option B (Sure value). Compare the Lottery value package (Option A) with each value of the Sure
+     value in (Option B). This means that in TABLE 1a for example, looking at Option B there are 6 Sure Values
+     that are guaranteed incentives (R50, R60, R70, R80, R90 and R100). In column Option B, compare EACH Sure Value
+     with the Lottery Value Package in Option A (R120 with 25% probability and R40 with 75% probability).
+     For example; compare the  R50 in Option B with the R120 with 25% probability & R40 with 75% probability in Option A.
+     Would you rather get the R50 or get ONE of the Lottery Value in Option A. Make your decision  in 'Decision 1'.
+     If you choose the sure value of R50, tick 'Option B' in Decision 1. If you choose the lottery value
+     package (R120 with 25% probability and R40 with 75% probability), tick 'Option A' in Decision 1.
+     Do this in every decision.  Tick a box to make your preferred choice of either Option A (Lottery value package) or
+     Option B (Sure value). Do this in all 4 tables.
+    </p>
+ <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-12">
+                     <h5>Table 1A:</h5>
+                    <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th style="text-align: center">Option A</th>
+                            <th style="text-align: center">Decisions 1-6; (First is for Option A, second is for Option B)</th>
+                            <th style="text-align: center">Option B</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td rowspan="6" style="padding-top: 15%">
+                                <p align="center">Play  Lottery ‘A’</p>
+                                <p align="center">You win: </p>
+                                <p align="center">R120 with 25% probability.</p>
+                                <p align="center">R40 with 75% probability.</p>
+                            </td>
+                            <td align="center">{% formfield player.get_1 %}</td>
+                            <td align="center">R50</td>
+                        </tr>
+                        <tr>
+                            <td align="center">{% formfield player.get_2 %}</td>
+                            <td align="center">R60</td>
+                        </tr>
+                        <tr>
+                            <td align="center">{% formfield player.get_3 %}</td>
+                            <td align="center">R70</td>
+                        </tr>
+                        <tr>
+                            <td align="center">{% formfield player.get_4 %}</td>
+                            <td align="center">R80</td>
+                        </tr>
+                        <tr>
+                            <td align="center">{% formfield player.get_5 %}</td>
+                            <td align="center">R90</td>
+                        </tr>
+                        <tr>
+                            <td align="center">{% formfield player.get_6 %}</td>
+                            <td align="center">R100</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Please indicate you option above. The first decision is for option A; the second is for option B
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+ <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-12">
+                     <h5>Table 2A:</h5>
+                    <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th style="text-align: center">Option A</th>
+                            <th style="text-align: center">Decisions 7-12; (First is for Option A, second is for Option B)</th>
+                            <th style="text-align: center">Option B</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td rowspan="6" style="padding-top: 15%">
+                                <p align="center">Play  Lottery ‘B’</p>
+                                <p align="center">You win: </p>
+                                <p align="center">R20 with 75% probability.</p>
+                                <p align="center">R120 with 25% probability.</p>
+                            </td>
+                            <td align="center">{% formfield player.get_1 %}</td>
+                            <td align="center">R50</td>
+                        </tr>
+                        <tr>
+                            <td align="center">{% formfield player.get_2 %}</td>
+                            <td align="center">R60</td>
+                        </tr>
+                        <tr>
+                            <td align="center">{% formfield player.get_3 %}</td>
+                            <td align="center">R70</td>
+                        </tr>
+                        <tr>
+                            <td align="center">{% formfield player.get_4 %}</td>
+                            <td align="center">R80</td>
+                        </tr>
+                        <tr>
+                            <td align="center">{% formfield player.get_5 %}</td>
+                            <td align="center">R90</td>
+                        </tr>
+                        <tr>
+                            <td align="center">{% formfield player.get_6 %}</td>
+                            <td align="center">R100</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Please indicate you option above. The first decision is for option A; the second is for option B
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+<div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-12">
+                     <h5>Table 1B:</h5>
+                    <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th style="text-align: center">Option A</th>
+                            <th style="text-align: center">Decisions 13.18; (First is for Option A, second is for Option B)</th>
+                            <th style="text-align: center">Option B</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td rowspan="6" style="padding-top: 15%">
+                                <p align="center">Play  Lottery ‘B’</p>
+                                <p align="center">You win: </p>
+                                <p align="center">R30 with 25% probability.</p>
+                                <p align="center">R150 with 25% probability.</p>
+                                <p align="center">R50 with 50% probability.</p>
+                            </td>
+                            <td align="center">{% formfield player.get_1 %}</td>
+                            <td align="center">R50</td>
+                        </tr>
+                        <tr>
+                            <td align="center">{% formfield player.get_2 %}</td>
+                            <td align="center">R60</td>
+                        </tr>
+                        <tr>
+                            <td align="center">{% formfield player.get_3 %}</td>
+                            <td align="center">R70</td>
+                        </tr>
+                        <tr>
+                            <td align="center">{% formfield player.get_4 %}</td>
+                            <td align="center">R80</td>
+                        </tr>
+                        <tr>
+                            <td align="center">{% formfield player.get_5 %}</td>
+                            <td align="center">R90</td>
+                        </tr>
+                        <tr>
+                            <td align="center">{% formfield player.get_6 %}</td>
+                            <td align="center">R100</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Please indicate you option above. The first decision is for option A; the second is for option B
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+<div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-12">
+                     <h5>Table 1B:</h5>
+                    <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th style="text-align: center">Option A</th>
+                            <th style="text-align: center">Decisions 13.18; (First is for Option A, second is for Option B)</th>
+                            <th style="text-align: center">Option B</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td rowspan="6" style="padding-top: 15%">
+                                <p align="center">Play  Lottery ‘B’</p>
+                                <p align="center">You win: </p>
+                                <p align="center">R30 with 50% probability.</p>
+                                <p align="center">R150 with 25% probability.</p>
+                                <p align="center">R50 with 25% probability.</p>
+                            </td>
+                            <td align="center">{% formfield player.get_1 %}</td>
+                            <td align="center">R50</td>
+                        </tr>
+                        <tr>
+                            <td align="center">{% formfield player.get_2 %}</td>
+                            <td align="center">R60</td>
+                        </tr>
+                        <tr>
+                            <td align="center">{% formfield player.get_3 %}</td>
+                            <td align="center">R70</td>
+                        </tr>
+                        <tr>
+                            <td align="center">{% formfield player.get_4 %}</td>
+                            <td align="center">R80</td>
+                        </tr>
+                        <tr>
+                            <td align="center">{% formfield player.get_5 %}</td>
+                            <td align="center">R90</td>
+                        </tr>
+                        <tr>
+                            <td align="center">{% formfield player.get_6 %}</td>
+                            <td align="center">R100</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Please indicate you option above. The first decision is for option A; the second is for option B
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    {% next_button %}
+{% endblock %}
+
+
